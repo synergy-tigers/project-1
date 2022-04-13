@@ -1,0 +1,126 @@
+* About
+  For Project 1, I created an org in Salesforce centered around a captioning company. An outline of org settings is below.
+* Outline [87%]
+  - [X] ERD [1/1]
+    - [X] Create ERD Diagram
+  - [X] Sales Cloud (SaC) [6/6]
+    - [X] Leads must have at least 3 assignment rules determining lead ownership
+      - The idea here is that different salespeople are trained to handle different forms of media and their needs/requirements
+      - [X] Rule for educational orgs
+      - [X] Rule for entertainment orgs
+      - [X] Rule for orgs outside of entertainment and education
+    - +Web-to-lead should be set up to allow a customer to submit a lead+
+    - [X] An opportunity path should provide step-by-step guidance and a celebratory effect upon completion
+    - [X] Products should be configured to reflect the products and services the business offers.
+    - [X] Pricebooks should be used for the products offered by the business.
+    - [X] There should be at least one alternate pricebook.
+      - Discount prices for public schools K-12.
+    - [X] /Multilevel campaigns at least three levels deep should be set up to reflect the business./
+      - Aimed at highlighting the benefits that captioning brings beyond accessibility for Deaf/HoH.
+      - This multilevel campaign will also help us gauge the effectiveness of social media for marketing as compared to traditional marketing mediums.
+      - Campaign Hierarchy
+        - Closed Captioning Benfits
+          - Social Media
+            - Twitter
+            - Facebook
+          - Traditional Media
+  - [X] Service Cloud (SeC) [3/3]
+    - [X] Cases should have at least three assignment rules determining different case ownership. 
+      - [X] Rule based on technical problems
+      - [X] Rule based on accuracy issues
+      - [X] Rule based on FCC compliance
+    - [X] Cases should have at least three escalation rules.
+      - [X] VIP customers (high account priority)
+      - [X] Cases that have gone 24 hours without a response
+      - [X] Live-captioning-related cases that haven't had a response after an hour.
+    - +Web-to-Case should be set up to allow a customer to submit a case.+
+    - [X] Case paths should offer step-by-step guidance on cases.
+    - /Email-to-case should be set up to allow a customer to submit a case./
+  - [X] Data Model (DM) [3/3]
+    - [X] Should offer a reasonable interpretation of the selected business.
+    - [X] Should demonstrate understanding of distinct types of relationship fields in Salesforce, including Lookup & Master-Detail.
+    - [X] Should demonstrate understanding of junction objects.
+  - [X] Security (S) [4/4]
+    - [X] Org level security should be configured for at least 2 distinct profiles.
+      - [X] Business Developer Representative Profile (customized sales profile clone)
+        - Login hours, 9AM-5PM on weekdays, 12AM-12AM on weekends to disable weekend login 
+        - IP ranges restricted to IP addresses from company offices (I just used a random range here that included my IP)
+        - 15 character minimum password length, must include alpha, numeric, and special characters          
+      - [X] Strategic Account Manager (customized service profile clone)
+        - Login hours, 9AM-10PM every day
+        - No IP restriction
+        - 15 character minimum password length, must include alpha, numeric, and special characters
+    - [X] Object level security should be configured for at least three distinct user types, including members of sales and service teams.
+      - [X] Business Developer Representative
+        - Read/write access to Caption Service custom objects
+        - Read/write access to Contract objects
+        - Revoked permissions to Cases
+      - [X] Strategic Account Manager
+        - Read/write access to Caption Service custom objects
+        - Read and create Contract objects
+        - Revoke access to Campaign objects
+        - Read/write access to Service Contract objects
+        - Revoke access to Lead and Opportunity objects
+      - [X] Enterprise Account Manager (strategic account manager profile)
+        - Permission set
+          - Delete activated contracts & delete activated contracts
+            - Read Account
+            - Read Order
+            - Edit Order
+            - Delete Contract
+            - Edit Contract
+            - Read Contract
+      - I changed visibility on numerous tabs for all of these
+    - [X] Record level security and access should be configured for the org.
+      - [X] Org-wide defaults should be configured
+        - Change Campaign to Public Read/Write
+        - Change Case to Public Read Only
+          - Only want employees in service positions to have write/transfer privileges
+        - Change Account and Contract to Public Read Only
+      - [X] Role hierarchy should be configured.
+        - Add Business Development Representative under Sales
+        - Add Enterprise Account Manager and Strategic Account Manager  under Customer Service
+      - [X] Sharing rules should be established with at least three distinct rules covering both owner and criteria-based rules.
+      - Accounts and contracts owned by strategic account manager can also be accessed by enterprise account manager.
+      - Enterprise account managers have read/write access to accounts and contracts associated with high priority customers even if they don't subscribe to premium services.
+      - Accounts owned by 
+      - [X] Manual sharing should be configured.
+    - [X] Field level security should be configured.
+      - Make Account ID visible only to system administrators, account managers, etc.
+  - [X] UI Customization (UI) [4/4]
+    - [X] There should be at least one custom app which includes a custom home page.
+    - [X] Custom and standard objects should have configured page layouts. [6/6]
+      - [X] Account
+      - [X] Contact
+      - [X] Case
+      - [X] Lead
+      - [X] Contract
+      - [X] Caption Service
+    - [X] Record types should be utilized for at least one object and with a minimum of two types.
+      - Caption Services
+        - Basic Services
+        - Premium Services
+    - [X] There should be at least one object-specific quick action and one global quick action.
+      - [X] Global: Quickly create new campaign (labeled "Quick Add Campaign")
+      - [X] Object-specific: Add Basic Caption Services button on Contract Detail Page. (labeled "Add Basic Services")
+    - Dynamic forms should be set up on at least one object.
+  - [-] Process Automation (PA) [4/5]
+    - [X] Screen Flow
+      - Screen flow to easily create a media contract
+    - [X] Before-save Flow
+      - Change priority of escalated cases 
+    - [X] After-save Flow
+      - Send an email whenever a contract is created that has a term length of three months or less.
+    - [X] Autolaunched Flow
+      - Send reminder email for weekly meeting every Friday at 9AM
+    - [ ] *Flows should feature interaction with the database and should demonstrate an understanding of working with single and bulk records.*
+    - /Workflow Rule/
+    - /Process configured through Process Builder/
+    - /Multi-step approval process/
+    - /Schedule-triggered flow/
+    - /Platform event-triggered flow/
+  - [X] Reports & Dashboards (RD) [1/1]
+    - [X] Use of both Standard Report Type and Custom Report Type.
+    - /A report of each report format/
+    - /A dashboard that provides visualizations of each of these reports to be used on the custom app homepage/
+    - /Proper sharing configured through folders for both dashboards and reports across multiple users/
