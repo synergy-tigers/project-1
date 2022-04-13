@@ -1,6 +1,6 @@
 * About
   For Project 1, I created an org in Salesforce centered around a captioning company. An outline of org settings is below.
-* Outline [87%]
+* Outline [100%]
   - [X] ERD [1/1]
     - [X] Create ERD Diagram
   - [X] Sales Cloud (SaC) [6/6]
@@ -53,16 +53,17 @@
     - [X] Object level security should be configured for at least three distinct user types, including members of sales and service teams.
       - [X] Business Developer Representative
         - Read/write access to Caption Service custom objects
-        - Read/write access to Contract objects
+        - Read and create Contract objects          
         - Revoked permissions to Cases
-      - [X] Strategic Account Manager
+          - I want cases to just be a support thing or to later create two record types for cases so there's a clear division
+      - [X] Account Manager
+        - Read/write access to Contract objects
         - Read/write access to Caption Service custom objects
-        - Read and create Contract objects
         - Revoke access to Campaign objects
         - Read/write access to Service Contract objects
         - Revoke access to Lead and Opportunity objects
-      - [X] Enterprise Account Manager (strategic account manager profile)
-        - Permission set
+      - [X] Account Director (strategic account manager profile)
+        - Permission set (adding permissions)
           - Delete activated contracts & delete activated contracts
             - Read Account
             - Read Order
@@ -70,6 +71,8 @@
             - Delete Contract
             - Edit Contract
             - Read Contract
+        - [X] Support specialist
+          - Read only access for contracts and caption services
       - I changed visibility on numerous tabs for all of these
     - [X] Record level security and access should be configured for the org.
       - [X] Org-wide defaults should be configured
@@ -97,14 +100,15 @@
       - [X] Contract
       - [X] Caption Service
     - [X] Record types should be utilized for at least one object and with a minimum of two types.
-      - Caption Services
-        - Basic Services
-        - Premium Services
+      - Cases
+        - Sales Cases
+        - Service Cases
+          - Cases related to actual problems with the caption services
     - [X] There should be at least one object-specific quick action and one global quick action.
       - [X] Global: Quickly create new campaign (labeled "Quick Add Campaign")
       - [X] Object-specific: Add Basic Caption Services button on Contract Detail Page. (labeled "Add Basic Services")
     - Dynamic forms should be set up on at least one object.
-  - [-] Process Automation (PA) [4/5]
+  - [X] Process Automation (PA) [5/5]
     - [X] Screen Flow
       - Screen flow to easily create a media contract
     - [X] Before-save Flow
@@ -113,7 +117,7 @@
       - Send an email whenever a contract is created that has a term length of three months or less.
     - [X] Autolaunched Flow
       - Send reminder email for weekly meeting every Friday at 9AM
-    - [ ] *Flows should feature interaction with the database and should demonstrate an understanding of working with single and bulk records.*
+    - [X] *Flows should feature interaction with the database and should demonstrate an understanding of working with single and bulk records.*
     - /Workflow Rule/
     - /Process configured through Process Builder/
     - /Multi-step approval process/
