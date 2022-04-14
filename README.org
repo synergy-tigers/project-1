@@ -6,7 +6,7 @@
   - [X] Sales Cloud (SaC) [6/6]
     - [X] Leads must have at least 3 assignment rules determining lead ownership
       - The idea here is that different salespeople are trained to handle different forms of media and their needs/requirements
-      - [X] Rule for educational orgs
+      - [X] Rule for educational orgsp
       - [X] Rule for entertainment orgs
       - [X] Rule for orgs outside of entertainment and education
     - +Web-to-lead should be set up to allow a customer to submit a lead+
@@ -33,8 +33,8 @@
       - [X] VIP customers (high account priority)
       - [X] Cases that have gone 24 hours without a response
       - [X] Live-captioning-related cases that haven't had a response after an hour.
-    - +Web-to-Case should be set up to allow a customer to submit a case.+
     - [X] Case paths should offer step-by-step guidance on cases.
+    - +Web-to-Case should be set up to allow a customer to submit a case.+
     - /Email-to-case should be set up to allow a customer to submit a case./
   - [X] Data Model (DM) [3/3]
     - [X] Should offer a reasonable interpretation of the selected business.
@@ -85,8 +85,10 @@
         - Add Enterprise Account Manager and Strategic Account Manager  under Customer Service
       - [X] Sharing rules should be established with at least three distinct rules covering both owner and criteria-based rules.
       - Accounts and contracts owned by strategic account manager can also be accessed by enterprise account manager.
-      - Enterprise account managers have read/write access to accounts and contracts associated with high priority customers even if they don't subscribe to premium services.
-      - Accounts owned by 
+      - +Enterprise account managers have read/write access to accounts and contracts associated with high priority customers even if they don't subscribe to premium services.+
+        - This won't work anymore since I got rid of this record type.
+      - Accounts owned by
+        - I just realized I never finished writing this, and I can't remember what I did here. OTL
       - [X] Manual sharing should be configured.
     - [X] Field level security should be configured.
       - Make Account ID visible only to system administrators, account managers, etc.
@@ -104,6 +106,7 @@
         - Sales Cases
         - Service Cases
           - Cases related to actual problems with the caption services
+        - This was originally record types for basic and premium caption service types, but I decided it didn't make sense to split the services up the way I had (e.g., someone can choose to get advanced caption formats but not get basic caption formats). Cue me spending an hour fixing record type settings on a million profiles that had basic record type set as default so that I could finally delete it. OTL
     - [X] There should be at least one object-specific quick action and one global quick action.
       - [X] Global: Quickly create new campaign (labeled "Quick Add Campaign")
       - [X] Object-specific: Add Basic Caption Services button on Contract Detail Page. (labeled "Add Basic Services")
@@ -111,6 +114,7 @@
   - [X] Process Automation (PA) [5/5]
     - [X] Screen Flow
       - Screen flow to easily create a media contract
+      - Bulkified screen flow to add as many accounts as you want at once.
     - [X] Before-save Flow
       - Change priority of escalated cases 
     - [X] After-save Flow
@@ -128,3 +132,4 @@
     - /A report of each report format/
     - /A dashboard that provides visualizations of each of these reports to be used on the custom app homepage/
     - /Proper sharing configured through folders for both dashboards and reports across multiple users/
+      - Created folders but didn't get around to setting up permissions
