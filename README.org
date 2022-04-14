@@ -1,6 +1,6 @@
 * About
-  For Project 1, I created an org in Salesforce centered around a captioning company. An outline of org settings is below.
-* Outline [100%]
+  For Project 1, I created an org in Salesforce centered around a captioning company. An outline of org settings is below. Optional objectives are italicized and have no checkmark if not done.
+* Outline [87%]
   - [X] ERD [1/1]
     - [X] Create ERD Diagram
   - [X] Sales Cloud (SaC) [6/6]
@@ -94,16 +94,16 @@
       - [X] Manual sharing should be configured.
     - [X] Field level security should be configured.
       - Make Account ID visible only to system administrators, account managers, etc.
-  - [X] UI Customization (UI) [4/4]
+  - [-] UI Customization (UI) [3/4]
     - [X] There should be at least one custom app which includes a custom home page.
-    - [X] Custom and standard objects should have configured page layouts. [6/6]
+    - [-] Custom and standard objects should have configured page layouts. [4/6]
       - [X] Account
       - [X] Contact
-      - [X] Case
+      - [ ] Case
         - I think setting a custom page layout here messed up my custom case path (?) somehow, so I reverted to the default case page layout, but that didn't fix the problem and I never re-assigned the custom page layout as default again.
       - [X] Lead
       - [X] Contract
-      - [X] Caption Service
+      - [ ] Caption Service
         - Disabled this temporarily so I could delete the record types set up for this object, but forgot to revert back to it afterwards.
     - [X] Record types should be utilized for at least one object and with a minimum of two types.
       - Cases
@@ -115,7 +115,7 @@
       - [X] Global: Quickly create new campaign (labeled "Quick Add Campaign")
       - [X] Object-specific: Add Basic Caption Services button on Contract Detail Page. (labeled "Add Basic Services")
         - This was changed to Add Caption Services after I got rid of the Basic and Premium record types for Caption Service.
-    - Dynamic forms should be set up on at least one object.
+    - /Dynamic forms should be set up on at least one object./
   - [X] Process Automation (PA) [5/5]
     - [X] Screen Flow
       - Screen flow to easily create a media contract
