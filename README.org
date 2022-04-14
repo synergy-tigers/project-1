@@ -1,5 +1,5 @@
 * About
-  For Project 1, I created an org in Salesforce centered around a captioning company. An outline of org settings is below. Optional objectives are italicized and have no checkmark if not done.
+  For Project 1, I created an org in Salesforce centered around a captioning company. An outline of org settings is below. Optional objectives are italicized and have no checkbox if not done.
 * Outline [87%]
   - [X] ERD [1/1]
     - [X] Create ERD Diagram
@@ -126,7 +126,7 @@
       - Send an email whenever a contract is created that has a term length of three months or less.
     - [X] Autolaunched Flow
       - Send reminder email for weekly meeting every Friday at 9AM
-    - [X] *Flows should feature interaction with the database and should demonstrate an understanding of working with single and bulk records.*
+    - [X] Flows should feature interaction with the database and should demonstrate an understanding of working with single and bulk records.
     - /Workflow Rule/
     - /Process configured through Process Builder/
     - /Multi-step approval process/
