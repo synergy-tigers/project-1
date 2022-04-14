@@ -82,7 +82,9 @@
         - Change Account and Contract to Public Read Only
       - [X] Role hierarchy should be configured.
         - Add Business Development Representative under Sales
-        - Add Enterprise Account Manager and Strategic Account Manager  under Customer Service
+        - Add Account Director under Customer Service
+        - Add Account Manager, Enterprise Account Manager, and Strategic Account Manager under Account Director
+        - Add Support Specialist under Account Manager
       - [X] Sharing rules should be established with at least three distinct rules covering both owner and criteria-based rules.
       - Accounts and contracts owned by strategic account manager can also be accessed by enterprise account manager.
       - +Enterprise account managers have read/write access to accounts and contracts associated with high priority customers even if they don't subscribe to premium services.+
@@ -112,6 +114,7 @@
     - [X] There should be at least one object-specific quick action and one global quick action.
       - [X] Global: Quickly create new campaign (labeled "Quick Add Campaign")
       - [X] Object-specific: Add Basic Caption Services button on Contract Detail Page. (labeled "Add Basic Services")
+        - This was changed to Add Caption Services after I got rid of the Basic and Premium record types for Caption Service.
     - Dynamic forms should be set up on at least one object.
   - [X] Process Automation (PA) [5/5]
     - [X] Screen Flow
