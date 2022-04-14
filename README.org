@@ -98,9 +98,11 @@
       - [X] Account
       - [X] Contact
       - [X] Case
+        - I think setting a custom page layout here messed up my custom case path (?) somehow, so I reverted to the default case page layout, but that didn't fix the problem and I never re-assigned the custom page layout as default again.
       - [X] Lead
       - [X] Contract
       - [X] Caption Service
+        - Disabled this temporarily so I could delete the record types set up for this object, but forgot to revert back to it afterwards.
     - [X] Record types should be utilized for at least one object and with a minimum of two types.
       - Cases
         - Sales Cases
