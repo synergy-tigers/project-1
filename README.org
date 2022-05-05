@@ -1,6 +1,6 @@
 * About
   For Project 1, I created an org in Salesforce centered around a captioning company. An outline of org settings is below. Optional objectives are italicized and have no checkbox if not done.
-* Outline [87%]
+* Project Outline
   - [X] ERD [1/1]
     - [X] Create ERD Diagram
   - [X] Sales Cloud (SaC) [6/6]
