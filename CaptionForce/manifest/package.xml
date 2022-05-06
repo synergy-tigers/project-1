@@ -14,26 +14,35 @@
     </types>    
     <types>
         <members>*</members>
-        <name>AssignmentRules</members>
+        <name>AssignmentRules</name>
     </types>
     <types>
         <members>*</members>
-        <name>PathAssistant</members>
+        <name>PathAssistant</name>
     </types>
     <types>
         <members>*</members>
-        <name>EscalationRules</members>
+        <name>EscalationRules</name>
     </types>
     <types>
         <members>*</members>
-        <name>QuickAction</members>
+        <name>QuickAction</name>
     </types>
     <types>
         <members>Send_Meeting_Email_Reminder</members>
         <members>Update_Priority_for_Escalated_Cases</members>
         <members>Bulk_Create_Accounts</members>
         <members>Create_Short_Term_Contract_Email_Alert</members>
-        <name>Flow</members>
-    </types>         
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>unfiled$public/New_Cases_Report_1C9</members>
+        <members>unfiled$public/Caption_Service_Sets_IBF</members>
+        <name>Report</name>
+    </types>
+    <types>
+        <members>PublicDashboards/mGrETbQrGGbCGHjVPhWVxJCDCVBGoo</members>
+        <name>Dashboard</name>
+    </types>
     <version>54.0</version>
 </Package>
