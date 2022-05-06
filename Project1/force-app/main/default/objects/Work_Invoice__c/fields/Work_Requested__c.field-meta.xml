@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Requested__c</fullName>
+    <businessStatus>Active</businessStatus>
+    <externalId>false</externalId>
+    <label>Work Requested</label>
+    <referenceTo>Order</referenceTo>
+    <relationshipLabel>Requested Work</relationshipLabel>
+    <relationshipName>Work_Invoices</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
