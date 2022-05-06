@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Services__c</fullName>
+    <externalId>false</externalId>
+    <label>Services</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Advanced Caption Formats</fullName>
+                <default>false</default>
+                <label>Advanced Caption Formats</label>
+            </value>
+            <value>
+                <fullName>API Access</fullName>
+                <default>false</default>
+                <label>API Access</label>
+            </value>
+            <value>
+                <fullName>Basic Caption Formats</fullName>
+                <default>true</default>
+                <label>Basic Caption Formats</label>
+            </value>
+            <value>
+                <fullName>Caption Editor</fullName>
+                <default>false</default>
+                <label>Caption Editor</label>
+            </value>
+            <value>
+                <fullName>Custom Platform Integration</fullName>
+                <default>false</default>
+                <label>Custom Platform Integration</label>
+            </value>
+            <value>
+                <fullName>HIPAA Compliance</fullName>
+                <default>false</default>
+                <label>HIPAA Compliance</label>
+            </value>
+            <value>
+                <fullName>Live Captioning</fullName>
+                <default>false</default>
+                <label>Live Captioning</label>
+            </value>
+            <value>
+                <fullName>Platform Integration</fullName>
+                <default>false</default>
+                <label>Platform Integration</label>
+            </value>
+            <value>
+                <fullName>Project-Level Billing</fullName>
+                <default>false</default>
+                <label>Project-Level Billing</label>
+            </value>
+            <value>
+                <fullName>Translation &amp; Subtitling</fullName>
+                <default>false</default>
+                <label>Translation &amp; Subtitling</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

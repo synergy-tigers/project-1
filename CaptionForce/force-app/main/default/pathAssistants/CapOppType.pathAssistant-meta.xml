@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>Type</fieldName>
+    <masterLabel>CapOppType</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>Type</fieldNames>
+        <fieldNames>OrderNumber__c</fieldNames>
+        <picklistValueName>Existing Customer - Downgrade</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>Type</fieldNames>
+        <fieldNames>OrderNumber__c</fieldNames>
+        <picklistValueName>Existing Customer - Replacement</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>Type</fieldNames>
+        <picklistValueName>Existing Customer - Upgrade</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>Description</fieldNames>
+        <fieldNames>ExpectedRevenue</fieldNames>
+        <fieldNames>Type</fieldNames>
+        <picklistValueName>New Customer</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

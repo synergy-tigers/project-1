@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Case</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>CapCasePath</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>CaseNumber</fieldNames>
+        <fieldNames>Reason</fieldNames>
+        <fieldNames>ContactEmail</fieldNames>
+        <fieldNames>SuppliedEmail</fieldNames>
+        <info>&lt;p&gt;Let the client know their case has been resolved.&lt;/p&gt;</info>
+        <picklistValueName>Closed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Reason</fieldNames>
+        <fieldNames>ContactId</fieldNames>
+        <fieldNames>ContactPhone</fieldNames>
+        <fieldNames>ContactEmail</fieldNames>
+        <info>&lt;p&gt;If you need more information, reach out if necessary.&lt;/p&gt;</info>
+        <picklistValueName>Escalated</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Reason</fieldNames>
+        <fieldNames>OwnerId</fieldNames>
+        <fieldNames>Priority</fieldNames>
+        <fieldNames>ProductId</fieldNames>
+        <fieldNames>Type</fieldNames>
+        <info>&lt;p&gt;Don&amp;#39;t forget to categorize this case so it can be escalated or moved to a specialized queue if needed.&lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Reason</fieldNames>
+        <fieldNames>Priority</fieldNames>
+        <picklistValueName>Working</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>
